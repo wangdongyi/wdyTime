@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Time</string>
+    <string name="active_filter_begin_title">选择开始时间</string>
+    <string name="active_filter_end_title">选择结束时间</string>
+    <string name="active_filter_time_error">结束时间不能小于开始时间</string>
+    <string name="active_filter_time_end_error">结束时间应该在今天之前</string>
+    <string name="sta_time_choose">选择日期</string>
+    <string name="sta_time_date_none">选择日期</string>
+    <string name="sta_time_date_error">时间早于今天</string>
+    <string name="common_ok">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="active_filter_begin">开始日期</string>
+    <string name="active_filter_end">结束日期</string>
+</resources>

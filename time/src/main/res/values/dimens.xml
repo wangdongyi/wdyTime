@@ -1,0 +1,61 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 默认titleBar高度 -->
+    <dimen name="activity_title_bar">48dp</dimen>
+    <!-- 一般字体大小 -->
+    <dimen name="txt_size_30">30dp</dimen>
+    <dimen name="txt_size_29">29dp</dimen>
+    <dimen name="txt_size_28">28dp</dimen>
+    <dimen name="txt_size_27">27dp</dimen>
+    <dimen name="txt_size_25">25dp</dimen>
+    <dimen name="txt_size_22">22dp</dimen>
+    <dimen name="txt_size_20">20dp</dimen>
+    <dimen name="txt_size_18">18dp</dimen>
+    <dimen name="txt_size_16">16dp</dimen>
+    <dimen name="txt_size_15">15dp</dimen>
+    <dimen name="txt_size_14">14dp</dimen>
+    <dimen name="txt_size_13">13dp</dimen>
+    <dimen name="txt_size_12">12dp</dimen>
+    <dimen name="txt_size_11">11dp</dimen>
+    <dimen name="txt_size_10">10dp</dimen>
+    <!-- popWimdpw基本布局的item高度-->
+    <dimen name="common_pop_height">40dp</dimen>
+    <dimen name="header_height">122dp</dimen>
+    <dimen name="header_height1">100dp</dimen>
+    <dimen name="header_action_height">72dp</dimen>
+    <dimen name="header_action_height_num">120dp</dimen>
+    <dimen name="common_left_margin">15dp</dimen>
+    <dimen name="common_right_margin">15dp</dimen>
+    <dimen name="common_padding">10dp</dimen>
+    <!-- 渠道统计item高度-->
+    <dimen name="statistics_date_title_height">30dp</dimen>
+    <dimen name="statistics_date_height">48dp</dimen>
+    <!-- 编辑模板-->
+    <dimen name="temple_blank_height">223dp</dimen>
+    <dimen name="temple_width">263dp</dimen>
+    <dimen name="temple_height">493dp</dimen>
+    <dimen name="temple_grid_height">423dp</dimen>
+    <dimen name="temple_grid_width">243dp</dimen>
+    <dimen name="temple_padding">10dp</dimen>
+    <dimen name="temple_txt_height">50dp</dimen>
+    <dimen name="temple_img_height">421dp</dimen>
+
+    <dimen name="header_logo_size">100dp</dimen>
+    <dimen name="header_action_height1">48dp</dimen>
+    <dimen name="header_layout_height">96dp</dimen>
+    <dimen name="header_height_user">127dp</dimen>
+
+    <dimen name="circle_width">15dp</dimen>
+    <dimen name="circle_top">25dp</dimen>
+    <dimen name="circle_active_top">35dp</dimen>
+    <dimen name="circle_active_width">40dp</dimen>
+
+    <dimen name="unit_padding_bottom">4dp</dimen>
+
+    <!-- 选择门店按钮-->
+    <dimen name="shop_layout_width">160dp</dimen>
+    <dimen name="shop_layout_height">50dp</dimen>
+    <dimen name="shop_layout_bottom">10dp</dimen>
+</resources>

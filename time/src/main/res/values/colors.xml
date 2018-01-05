@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4B86FF</color>
+
+    <color name="white">#ffffff</color>
+    <color name="top_color">#4B86FF</color>
+    <color name="btn_unable">#55000000</color>
+    <color name="red">#ff7b7b</color>
+    <color name="divider">#ededed</color>
+    <color name="title_gray1">#50627B</color>
+    <color name="title_gray2">#7A8FAC</color>
+    <color name="title_gray3">#D0DAEA</color>
+    <color name="pop_bg">#88000000</color>
+    <color name="slide_text">#444444</color>
+    <color name="transparent">#00000000</color>
+    <color name="fetch_tans">#99000000</color>
+    <color name="btn_press">#20000000</color>
+    <color name="login_yellow">#d2ad68</color>
+    <color name="gray">#b5bdc8</color>
+    <color name="common_pop">#f0f0f0</color>
+    <color name="slide_text_grey">#CECECE</color>
+    <color name="amount">#FF5B29</color>
+    <color name="tab_blue">#4b85ff</color>
+    <color name="common_bg">#f0eff5</color>
+    <color name="briefing_1">#50627B</color>
+    <color name="briefing_2">#7A8FAC</color>
+    <color name="briefing_3">#FFA942</color>
+    <color name="briefing_4">#00B4FE</color>
+    <color name="stay_1">#2BCEC5</color>
+    <color name="background_grey">#efeff4</color>
+    <color name="line">#d5d5d7</color>
+    <color name="time_filter">#a5adb8</color>
+    <color name="time_filter_title_bg">#e6e5e5</color>
+    <color name="blue">#4B86FF</color>
+</resources>

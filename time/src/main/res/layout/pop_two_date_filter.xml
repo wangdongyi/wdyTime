@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/pop_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_title"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/time_filter_uncheck_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/active_filter_begin"
+                    android:textColor="@color/time_filter"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_begin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_begin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/time_filter"
+                    android:textSize="@dimen/txt_size_14"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/time_filter_uncheck_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/active_filter_end"
+                    android:textColor="@color/time_filter"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_end"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/time_filter"
+                    android:textSize="@dimen/txt_size_14"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/rl_date"
+            android:layout_marginTop="15dp"
+            android:background="@color/time_filter_title_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_filter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/active_filter_begin_title"
+                android:textColor="@color/time_filter"
+                android:textSize="@dimen/txt_size_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_cancel">
+
+            <DatePicker
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:datePickerMode="spinner" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_press_bg"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/common_ok"
+                android:textColor="@color/login_yellow"
+                android:textSize="@dimen/txt_size_16" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_toLeftOf="@id/tv_ok"
+                android:background="@drawable/btn_press_bg"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/common_cancel"
+                android:textColor="@color/time_filter"
+                android:textSize="@dimen/txt_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
