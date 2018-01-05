@@ -69,32 +69,11 @@ public class PopViewTwoDateFilter extends PopViewBase {
         public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             String dateStr = year + "-" + (monthOfYear + 1) + "-" + dayOfMonth;
             long date = StringUtils.convertYYMMDDtoBeginSeconds(dateStr);
-            long yesterday = System.currentTimeMillis() / 1000 - 24 * 60 * 60;
             if (isBeginCheck) {
-                if (date > yesterday) {
-                    String[] dateBegin = StringUtils.convertToYYYYMMDD(begin).split("-");
-                    try {
-                        date_picker.updateDate(Integer.parseInt(dateBegin[0]), Integer.parseInt(dateBegin[1]) - 1,
-                                Integer.parseInt(dateBegin[2]));
-                    } catch (Exception e) {
-
-                    }
-                    return;
-                }
                 tv_begin_time.setText(dateStr);
                 begin = date;
             }
             if (isEndCheck) {
-                if (date > yesterday) {
-                    String[] dateEnd = StringUtils.convertToYYYYMMDD(end).split("-");
-                    try {
-                        date_picker.updateDate(Integer.parseInt(dateEnd[0]), Integer.parseInt(dateEnd[1]) - 1,
-                                Integer.parseInt(dateEnd[2]));
-                    } catch (Exception e) {
-
-                    }
-                    return;
-                }
                 tv_end_time.setText(dateStr);
                 end = date;
             }
@@ -109,10 +88,10 @@ public class PopViewTwoDateFilter extends PopViewBase {
         this.begin = beginTime;
         this.end = endTime;
         if (begin == 0) {
-            begin = System.currentTimeMillis() / 1000 - 24 * 60 * 60;
+            begin = System.currentTimeMillis() / 1000;
         }
         if (end == 0) {
-            end = System.currentTimeMillis() / 1000 - 24 * 60 * 60;
+            end = System.currentTimeMillis() / 1000;
         }
         if (begin != 0 && end != 0) {
             isBeginCheck = true;

@@ -8,7 +8,6 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 
 
-
 /**
  * Created by Tongmeng on 2017/10/19.
  */
@@ -84,17 +83,7 @@ public class PopViewOneDateFilter extends PopViewBase {
         public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             String beginStr = year + "-" + (monthOfYear + 1) + "-" + dayOfMonth;
             long dateNew = StringUtils.convertYYMMDDtoBeginSeconds(beginStr);
-            long yesterday = System.currentTimeMillis() / 1000 - 24 * 60 * 60;
-            if (dateNew > yesterday) {
-                String[] dateStr = StringUtils.convertToYYYYMMDD(date).split("-");
-                try {
-                    date_picker.updateDate(Integer.parseInt(dateStr[0]), Integer.parseInt(dateStr[1]) - 1,
-                            Integer.parseInt(dateStr[2]));
-                } catch (Exception e) {
-
-                }
-                return;
-            }
+            String[] dateStr = StringUtils.convertToYYYYMMDD(date).split("-");
             date = dateNew;
         }
     }
